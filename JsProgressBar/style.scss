@@ -1,0 +1,56 @@
+$darker: #262833;
+$dark: #5b5656;
+$primary: #4ACFAC;
+$primarylight: #82ffde;
+$primarydark: #009d7d;
+$white: #fff;
+
+body{
+    background-color: $darker;
+    button{
+        background-color: $primary;
+        color: $white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+        border-width: 0px;
+        border-radius: 10px;
+        font-size: 20px;
+        transition-timing-function: ease;
+        //transition-duration: 1s;
+        box-shadow: 0px 0px 75px 0px rgba(0,0,0,1);
+        &:hover{
+            background-color: $primarydark;
+            box-shadow: 0px 0px 75px 0px rgba(0, 0, 0, 0);
+        }
+        &:active{
+            background-color: $primarylight;
+        }
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #Progress_Status { 
+        width: 50%; 
+        background-color: #ddd; 
+    } 
+    .hidden{
+        visibility: hidden;
+    }
+    #myprogressBar { 
+        width: 1%; 
+        height: 35px; 
+        background-color: #4CAF50; 
+        text-align: center; 
+        line-height: 32px; 
+        color: black; 
+    } 
+    progress {
+        height: 20px;
+        width: 75vw;
+    }
+}
